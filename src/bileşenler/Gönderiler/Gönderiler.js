@@ -10,7 +10,11 @@ const Gönderiler = (props) => {
     <div className="posts-container-wrapper">
       {
         gonderiler.map((item) => (
-          <Gönderi gönderi={item} gonderiyiBegen={gonderiyiBegen} />
+          <Gönderi
+            gönderi={item}
+            gonderiyiBegen={gonderiyiBegen}
+            key={item.id}
+          />
         ))
         /* gönderiler dizisini işleyip her döngüde bir Gönderi bileşeni çağırın*/
       }
